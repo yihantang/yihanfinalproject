@@ -1,0 +1,9 @@
+Package: yihanfinalproject
+Type: Package
+Title: Tools for a Curcumin research
+Version: 0.0.0.9002
+Author: Yi Han Tang <yihantang@usf.edu>
+Maintainer: Yi Han Tang <yihantang@usf.edu>
+Description: There has some research found that curcumin, which is chemically produced by plants of the Curcuma longa species can help people to lose weight. This package is created to help researchers to organize the data and help them to see whether the frequency of taking curcumin would affect the effect to lose weight. 
+License: CCO 1.0
+RoxygenNote: 7.1.1
