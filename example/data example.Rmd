@@ -2,28 +2,30 @@
 title: "Function work flow example"
 author: "Yi-Han Tang"
 date: "2021/4/23"
-output: html_document
+output:
+  word_document: default
+  html_document: default
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-# The package will used in this example
+The package will used in this example
 ```{r}
 library(ggplot2)
 library(dplyr)
 library(yihanfinalproject)
 ```
 
-# Read the data and input it into R. 
+Read the data and input it into R. 
 ```{r}
 data<- read.csv(file.choose(),header = TRUE)
 
 data
 ```
 
-#calculate the two BMI(before & after) of participants by using function cal_bmi() and insert new column for the results
+Calculate the two BMI(before & after) of participants by using function cal_bmi() and insert new column for the results
 ```{r}
 
 data$first_BMI <- cal_bmi(data$height, data$weight.1..Before.)
@@ -32,7 +34,7 @@ data$second_BMI <-cal_bmi(data$height, data$weight.2..after.)
 data
 ```
 
-#check the qualify of each participants (the weight should use weight 1). Increase a column to show the results. After that, using filter() to filter the participants who are "Eligile".
+Check the qualify of each participants (the weight should use weight 1). Increase a column to show the results. After that, using filter() to filter the participants who are "Eligile".
 ```{r}
 data$checkstate <- check_check(data$age, data$height, data$weight.1..Before.)
 
@@ -42,7 +44,7 @@ newdata
 ```
 
 
-#summay each group(drug frequency) and input extra participants to each group have same participants
+Summay each group(drug frequency) and input extra participants to each group have same participants
 ```{r}
 count(newdata, drug_frequency)
 data2 <-read.csv(file.choose(),header = TRUE)
@@ -63,8 +65,8 @@ arrange(total,drug_frequency)
 
 ```
 
-#use total(dataset) to see the different results by different varies.
-#First, to see the BMI distribution of participants of different ages by using finction plotage(). And using plotage_separate() to see in different drug frequency, the age distribution of participants.
+Use total(dataset) to see the different results by different varies.
+First, to see the BMI distribution of participants of different ages by using finction plotage(). And using plotage_separate() to see in different drug frequency, the age distribution of participants.
 ```{r}
 Before1 <- plotage(total$age,total$height, total$weight.1..Before., total$drug_frequency)
 After1 <- plotage(total$age, total$height, total$weight.2..after.,total$drug_frequency)
@@ -80,7 +82,7 @@ After_separte1
 
 ```
 
-# Using plotgender() and plotgender_separate() to see the different results by gender.
+Using plotgender() and plotgender_separate() to see the different results by gender.
 ```{r}
 genderbefore <-plotgender(total$age, total$height, total$weight.1..Before.)
 genderafter <- plotgender(total$age, total$height, total$weight.2..after.)
