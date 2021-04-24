@@ -3,8 +3,8 @@ title: "Function work flow example"
 author: "Yi-Han Tang"
 date: "2021/4/23"
 output:
-  word_document: default
   html_document: default
+  word_document: default
 ---
 
 ```{r setup, include=FALSE}
