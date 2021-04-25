@@ -21,7 +21,7 @@ plotage_separate(data, age, height, weight, drug_frequency, ...)
 plot
 }
 \description{
-This function is used to plot the participants by different varies separately.
+This function is used to plot the participants by different variable separately.
 }
 \details{
 This function is used to see the BMI distribution of participants of different ages.

@@ -1,5 +1,5 @@
 #' @title plotgender_separate
-#' @description This function is used to plot the participants by different varies
+#' @description This function is used to plot the participants by different variable
 #' @details This function is used to see the BMI distribution of participants of different ages.
 #' Moreover, the participants are group by how many times they are taking the pills in a week.
 #' @aliases plotgender_separate

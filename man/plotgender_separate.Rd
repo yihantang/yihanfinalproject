@@ -21,7 +21,7 @@ plotgender_separate(data, age, height, weight, gender, ...)
 plot
 }
 \description{
-This function is used to plot the participants by different varies
+This function is used to plot the participants by different variable
 }
 \details{
 This function is used to see the BMI distribution of participants of different ages.
