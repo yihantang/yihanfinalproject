@@ -4,3 +4,5 @@ There has some research found that curcumin, which is chemically produced by pla
 This package is created to help researchers to organize the data and help them to see whether the frequency of taking curcumin would affect the effect to lose weight. 
 
 The Markdown for the example is in the example file
+This markdown shows the results by using the datasets, which I provide in the data file.
+http://rpubs.com/yihantang/yihanfinalproject
